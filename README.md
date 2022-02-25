@@ -229,7 +229,15 @@ Slither is a static analysis tool that helps you find vulnerabilities in Solidit
 $ pip3 install slither-analyzer
 ```
 
-# Misc Tools
+# Open Zeppelin
+
+This set of contracts provides the most common functionality for the development of smart contracts. They are battle tested and will increase the security of yout contracts.
+
+```
+$ yarn add -D @openzeppelin/contracts
+```
+
+# System Tools
 
 ## dotenv
 
@@ -267,4 +275,20 @@ For project files management
 
 ```
 $ yarn add -D fs-extra @types/fs-extra
+```
+
+## cli-progress
+
+Create more verbose command line scripts that provide an indication of current progress
+
+```
+$ yarn add -D cli-progress
+```
+
+## console-log-colors
+
+Create better command line scripts by adding colors and making them more beautiful and useful
+
+```
+$ yarn add -D console-log-colors
 ```

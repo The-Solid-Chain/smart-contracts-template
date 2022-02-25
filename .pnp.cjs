@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@nomiclabs/hardhat-ethers", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.5"],\
             ["@nomiclabs/hardhat-waffle", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.2"],\
+            ["@openzeppelin/contracts", "npm:4.5.0"],\
             ["@typechain/ethers-v5", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:9.0.0"],\
             ["@typechain/hardhat", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:4.0.0"],\
             ["@types/chai", "npm:4.3.0"],\
@@ -46,6 +47,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:5.12.1"],\
             ["chai", "npm:4.3.6"],\
             ["chai-ethers-bn", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:0.0.3"],\
+            ["cli-progress", "npm:3.10.0"],\
+            ["console-log-colors", "npm:0.2.3"],\
             ["cross-env", "npm:7.0.3"],\
             ["dotenv", "npm:16.0.0"],\
             ["eslint", "npm:8.9.0"],\
@@ -56,6 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-extra", "npm:10.0.1"],\
             ["ganache", "npm:7.0.2"],\
             ["hardhat", "npm:2.8.4"],\
+            ["hardhat-abi-exporter", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.8.0"],\
             ["hardhat-contract-sizer", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.4.0"],\
             ["hardhat-gas-reporter", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:1.0.8"],\
             ["lodash", "npm:4.17.21"],\
@@ -938,6 +942,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@npmcli/move-file", "npm:1.1.2"],\
             ["mkdirp", "npm:1.0.4"],\
             ["rimraf", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@openzeppelin/contracts", [\
+        ["npm:4.5.0", {\
+          "packageLocation": "./.yarn/cache/@openzeppelin-contracts-npm-4.5.0-c6f6b2c463-1c9c5dff04.zip/node_modules/@openzeppelin/contracts/",\
+          "packageDependencies": [\
+            ["@openzeppelin/contracts", "npm:4.5.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4107,6 +4120,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["cli-progress", [\
+        ["npm:3.10.0", {\
+          "packageLocation": "./.yarn/cache/cli-progress-npm-3.10.0-a1609d715c-8e22c6265f.zip/node_modules/cli-progress/",\
+          "packageDependencies": [\
+            ["cli-progress", "npm:3.10.0"],\
+            ["string-width", "npm:4.2.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["cli-table3", [\
         ["npm:0.5.1", {\
           "packageLocation": "./.yarn/cache/cli-table3-npm-0.5.1-570cb07b69-3ff8c82144.zip/node_modules/cli-table3/",\
@@ -4367,6 +4390,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/console-control-strings-npm-1.1.0-e3160e5275-8755d76787.zip/node_modules/console-control-strings/",\
           "packageDependencies": [\
             ["console-control-strings", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["console-log-colors", [\
+        ["npm:0.2.3", {\
+          "packageLocation": "./.yarn/cache/console-log-colors-npm-0.2.3-fe591d7daf-5062af7f58.zip/node_modules/console-log-colors/",\
+          "packageDependencies": [\
+            ["console-log-colors", "npm:0.2.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4959,6 +4991,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/delegates-npm-1.0.0-9b1942d75f-a51744d9b5.zip/node_modules/delegates/",\
           "packageDependencies": [\
             ["delegates", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["delete-empty", [\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/delete-empty-npm-3.0.0-3c5b632650-1e2b030346.zip/node_modules/delete-empty/",\
+          "packageDependencies": [\
+            ["delete-empty", "npm:3.0.0"],\
+            ["ansi-colors", "npm:4.1.1"],\
+            ["minimist", "npm:1.2.5"],\
+            ["path-starts-with", "npm:2.0.0"],\
+            ["rimraf", "npm:2.7.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7632,6 +7677,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tsort", "npm:0.0.1"],\
             ["uuid", "npm:8.3.2"],\
             ["ws", "virtual:b26ed34e197f0de9af0e2df571bf0342728aa250bbdd94529c732d2ce675baf1b3df85bffd561012e4d25de8d5b6e0cd5f1fb8ceb33fb9a376dc7ab930a92fa9#npm:7.5.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["hardhat-abi-exporter", [\
+        ["npm:2.8.0", {\
+          "packageLocation": "./.yarn/cache/hardhat-abi-exporter-npm-2.8.0-94991dcfe6-d8657b0d4e.zip/node_modules/hardhat-abi-exporter/",\
+          "packageDependencies": [\
+            ["hardhat-abi-exporter", "npm:2.8.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.8.0", {\
+          "packageLocation": "./.yarn/__virtual__/hardhat-abi-exporter-virtual-b8b608a0fd/0/cache/hardhat-abi-exporter-npm-2.8.0-94991dcfe6-d8657b0d4e.zip/node_modules/hardhat-abi-exporter/",\
+          "packageDependencies": [\
+            ["hardhat-abi-exporter", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.8.0"],\
+            ["@ethersproject/abi", "npm:5.5.0"],\
+            ["@types/hardhat", null],\
+            ["delete-empty", "npm:3.0.0"],\
+            ["hardhat", "npm:2.8.4"]\
+          ],\
+          "packagePeers": [\
+            "@types/hardhat",\
+            "hardhat"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11200,6 +11269,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["path-starts-with", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/path-starts-with-npm-2.0.0-7154de8f73-c780e5feb5.zip/node_modules/path-starts-with/",\
+          "packageDependencies": [\
+            ["path-starts-with", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["path-to-regexp", [\
         ["npm:0.1.7", {\
           "packageLocation": "./.yarn/cache/path-to-regexp-npm-0.1.7-2605347373-69a14ea24d.zip/node_modules/path-to-regexp/",\
@@ -13024,6 +13102,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["solidity-template-v2", "workspace:."],\
             ["@nomiclabs/hardhat-ethers", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.5"],\
             ["@nomiclabs/hardhat-waffle", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.2"],\
+            ["@openzeppelin/contracts", "npm:4.5.0"],\
             ["@typechain/ethers-v5", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:9.0.0"],\
             ["@typechain/hardhat", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:4.0.0"],\
             ["@types/chai", "npm:4.3.0"],\
@@ -13035,6 +13114,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:5.12.1"],\
             ["chai", "npm:4.3.6"],\
             ["chai-ethers-bn", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:0.0.3"],\
+            ["cli-progress", "npm:3.10.0"],\
+            ["console-log-colors", "npm:0.2.3"],\
             ["cross-env", "npm:7.0.3"],\
             ["dotenv", "npm:16.0.0"],\
             ["eslint", "npm:8.9.0"],\
@@ -13045,6 +13126,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-extra", "npm:10.0.1"],\
             ["ganache", "npm:7.0.2"],\
             ["hardhat", "npm:2.8.4"],\
+            ["hardhat-abi-exporter", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.8.0"],\
             ["hardhat-contract-sizer", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.4.0"],\
             ["hardhat-gas-reporter", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:1.0.8"],\
             ["lodash", "npm:4.17.21"],\

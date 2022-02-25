@@ -9,6 +9,7 @@
 !.yarn/sdks
 !.yarn/versions
 artifacts/
+abis/
 build/
 cache/
 coverage/

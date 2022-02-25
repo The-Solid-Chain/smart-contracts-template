@@ -1,7 +1,7 @@
-//import '@nomiclabs/hardhat-waffle';
+import "@nomiclabs/hardhat-waffle";
 import "@nomiclabs/hardhat-ethers";
 import "@typechain/hardhat";
-//import "hardhat-abi-exporter";
+import "hardhat-abi-exporter";
 import "hardhat-gas-reporter";
 import "hardhat-contract-sizer";
 import "solidity-coverage";
@@ -64,14 +64,15 @@ const config: HardhatUserConfig = {
             //"@uniswap/v3-periphery/artifacts/contracts/interfaces/INonfungiblePositionManager.sol/INonfungiblePositionManager.json",
         ],
     },
-    // abiExporter: {
-    //     path: "./abis",
-    //     clear: true,
-    //     flat: true,
-    //     only: [":NFT", ":INFTPotionValidator$"],
-    //     spacing: 2,
-    //     pretty: false,
-    // },
+    abiExporter: {
+        path: "./abis",
+        runOnCompile: true,
+        clear: true,
+        flat: true,
+        only: [],
+        spacing: 2,
+        pretty: false,
+    },
 };
 
 export default config;
