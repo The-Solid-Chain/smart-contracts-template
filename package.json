@@ -29,6 +29,11 @@
         "prettier": "prettier --config ./.prettierrc.js --write \"**/*.{js,json,md,sol,ts}\"",
         "prettier:check": "prettier --check --config ./.prettierrc.js \"**/*.{js,json,md,sol,ts}\""
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn lint"
+        }
+    },
     "devDependencies": {
         "@ethersproject/abi": "^5.5.0",
         "@ethersproject/bytes": "^5.5.0",
