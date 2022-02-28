@@ -142,6 +142,9 @@ if (endpointProvider !== "infura" && endpointProvider !== "alchemy") {
     throw new Error("Please set your ENDPOINT_PROVIDER to a valid value in a .env file");
 }
 
+const configMaxGas: number | undefined = Number(process.env.MAX_GAS);
+const configGasPrice: number | undefined = Number(process.env.GAS_PRICE);
+
 export function getHardhatChainConfig(): HardhatNetworkUserConfig {
     return {
         accounts: {
@@ -176,8 +179,8 @@ export function getChainConfig(network: NetworksType): NetworkUserConfig {
             path: "m/44'/60'/0'/0",
         },
         chainId: ChainIds[network],
-        gas: Gas[network] || "auto",
-        gasPrice: GasPrice[network] || "auto",
+        gas: configMaxGas || Gas[network] || "auto",
+        gasPrice: configGasPrice || GasPrice[network] || "auto",
         url,
     };
 }
