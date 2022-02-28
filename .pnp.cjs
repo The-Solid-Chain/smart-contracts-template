@@ -33,6 +33,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@ethersproject/abi", "npm:5.5.0"],\
+            ["@ethersproject/bytes", "npm:5.5.0"],\
+            ["@ethersproject/providers", "npm:5.5.3"],\
             ["@nomiclabs/hardhat-ethers", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.5"],\
             ["@nomiclabs/hardhat-waffle", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.2"],\
             ["@openzeppelin/contracts", "npm:4.5.0"],\
@@ -1248,9 +1251,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@typechain-ethers-v5-virtual-4f9493c2f7/0/cache/@typechain-ethers-v5-npm-9.0.0-a871f2b650-8b04bf0879.zip/node_modules/@typechain/ethers-v5/",\
           "packageDependencies": [\
             ["@typechain/ethers-v5", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:9.0.0"],\
-            ["@ethersproject/abi", null],\
-            ["@ethersproject/bytes", null],\
-            ["@ethersproject/providers", null],\
+            ["@ethersproject/abi", "npm:5.5.0"],\
+            ["@ethersproject/bytes", "npm:5.5.0"],\
+            ["@ethersproject/providers", "npm:5.5.3"],\
             ["@types/ethers", null],\
             ["@types/ethersproject__abi", null],\
             ["@types/ethersproject__bytes", null],\
@@ -13100,6 +13103,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["solidity-template-v2", "workspace:."],\
+            ["@ethersproject/abi", "npm:5.5.0"],\
+            ["@ethersproject/bytes", "npm:5.5.0"],\
+            ["@ethersproject/providers", "npm:5.5.3"],\
             ["@nomiclabs/hardhat-ethers", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.5"],\
             ["@nomiclabs/hardhat-waffle", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.2"],\
             ["@openzeppelin/contracts", "npm:4.5.0"],\

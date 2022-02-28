@@ -39,7 +39,7 @@ Reference: https://hardhat.org/guides/typescript.html
 Typechain will help generating typescript bindings for the Solidity contracts at compile time. Then this bindings can be used to access the contracts using typescript.
 
 ```
-$ yarn add -D typechain @typechain/hardhat @typechain/ethers-v5 lodash
+$ yarn add -D typechain @typechain/hardhat @typechain/ethers-v5 @ethersproject/bytes @ethersproject/abi @ethersproject/providers lodash
 ```
 
 Reference: https://www.npmjs.com/package/@typechain/hardhat
