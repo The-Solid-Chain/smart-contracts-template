@@ -198,4 +198,5 @@ Git hooks made easy. Helper to run pre-commit hooks before pushing to the remote
 
 ```
 $ yarn add -D husky
+$ npx mrm@2 lint-staged
 ```
