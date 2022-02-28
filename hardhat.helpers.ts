@@ -137,6 +137,11 @@ if (!endpointApiKey) {
     throw new Error("Please set your ENDPOINT_API_KEY in a .env file");
 }
 
+const endpointProvider: string = process.env.ENDPOINT_PROVIDER != null ? process.env.ENDPOINT_PROVIDER : "";
+if (endpointProvider !== "infura" && endpointProvider !== "alchemy") {
+    throw new Error("Please set your ENDPOINT_PROVIDER to a valid value in a .env file");
+}
+
 export function getHardhatChainConfig(): HardhatNetworkUserConfig {
     return {
         accounts: {
@@ -162,9 +167,8 @@ export function getLocalhostChainConfig(): NetworkUserConfig {
 }
 
 export function getChainConfig(network: NetworksType): NetworkUserConfig {
-    const endPointProvider: EndpointProvider = (<any>EndpointProvider)[process.env.ENDPOINT_PROVIDER!];
-
-    const url: string = EndpointURLs[endPointProvider][network] + endpointApiKey;
+    const provider: EndpointProvider = <EndpointProvider>endpointProvider;
+    const url: string = EndpointURLs[provider][network] + endpointApiKey;
     return {
         accounts: {
             count: 10,
