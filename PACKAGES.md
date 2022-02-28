@@ -126,7 +126,6 @@ Config files: [.solhint.json](.solhint.json) and [.solhintignore](.solhintignore
 
 Reference: https://github.com/protofire/solhint
 
-
 # Open Zeppelin
 
 This set of contracts provides the most common functionality for the development of smart contracts. They are battle tested and will increase the security of yout contracts.
@@ -190,4 +189,3 @@ Create better command line scripts by adding colors and making them more beautif
 ```
 $ yarn add -D console-log-colors
 ```
-

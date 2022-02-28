@@ -19,6 +19,7 @@ This will install the VS Code SDKs with support for typescript and will make VS 
 Code formatter directly in VS Code.
 
 Quick Open with Ctrl+P and then type:
+
 ```
 ext install esbenp.prettier-vscode
 ```
@@ -30,6 +31,7 @@ Reference: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-v
 Adds syntax highlighting, linting, code compilation and more things for VS Code. A must have for solidity development.
 
 Quick Open with Ctrl+P and then type:
+
 ```
 ext install JuanBlanco.solidity
 ```
@@ -50,6 +52,7 @@ Reference: [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBl
 Adds code augmentation and visual security linting to solidity.
 
 Quick Open with Ctrl+P and then type:
+
 ```
 ext install tintinweb.solidity-visual-auditor
 ```
@@ -61,6 +64,7 @@ Reference: https://marketplace.visualstudio.com/items?itemName=tintinweb.solidit
 Generates Source Code Metrics, Complexity and Risk profile reports for projects written in Solidity
 
 Quick Open with Ctrl+P and then type:
+
 ```
 ext install tintinweb.solidity-metrics
 ```
@@ -72,6 +76,7 @@ Reference: https://marketplace.visualstudio.com/items?itemName=tintinweb.solidit
 Allows to run MythX smart contract analysis from VS Code. You will need to set up an account in order to use this extension.
 
 Quick Open with Ctrl+P and then type:
+
 ```
 ext install MythX.mythxvsc
 ```
