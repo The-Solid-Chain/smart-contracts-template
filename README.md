@@ -11,6 +11,8 @@ This repository is a Yarn zero-install repository for Smart Contracts developmen
 
 ## Setup
 
+### Install Dependencies
+
 To start using this repo, first you need to have Node and Yarn installed. If you don't have them and don't know how to install them, you can refer to the [PREREQUISITES.md](./PREREQUISITES.md) installation instructions.
 
 Then you can install all dependencies using the following command:
@@ -18,6 +20,18 @@ Then you can install all dependencies using the following command:
 $ yarn install
 ```
 
+### Setup your .env file
+
+Copy the [.env.template](.env.template) file into a **.env** file and fill in the values. You will need to fill at least the following values:
+
+- **WALLET_SEED** - The seed of the wallet that will be used to deploy the contracts.
+- **ENDPOINT_PROVIDER** - The endpoint provider that will be used to connect to the blockchain. It can be **'infura'** or **'alchemy'**
+- **ENDPOINT_API_KEY** - The API key from your endpoint provider.
+
+You can also fill in the following values, but they are optional:
+
+- **MAX_GAS** - The maximum gas that will be used to deploy the contracts or perform a transaction.
+- **GAS_PRICE** - The gas price that will be used when doing a transaction on the blockchain
 ## Commands
 
 All the tools are configured with some plugins to get the most out of them. Some pre-configured commands are also provided in **package.json**.
