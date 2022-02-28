@@ -52,8 +52,9 @@ All the tools are configured with some plugins to get the most out of them. Some
 
 For more information on how to create your own repo like this one, you can read the [YARN.md](./YARN.md) and [PACKAGES.md](./PACKAGES.md) guides.
 # Author
-My name is Roberto Cano, I'm a Blockchain Engineer and Founder of [The Solid Chain](htts://thesolidchain.com). You can find me on:
+My name is Roberto Cano, I'm a Blockchain Engineer and Founder of **The Solid Chain**. You can find me on:
 
+- [The Solid Chain](https://thesolidchain.com)
 - [Twitter](https://twitter.com/robersoca)
 - [Github](https://github.com/robercano)
 - [LinkedIn](https://www.linkedin.com/in/robercano/)
