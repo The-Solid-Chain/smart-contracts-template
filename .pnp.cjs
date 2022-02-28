@@ -66,7 +66,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hardhat-abi-exporter", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.8.0"],\
             ["hardhat-contract-sizer", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.5.0"],\
             ["hardhat-gas-reporter", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:1.0.8"],\
-            ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:9.2.1"],\
             ["prettier", "npm:2.5.1"],\
             ["prettier-plugin-solidity", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:1.0.0-dev.21"],\
@@ -1344,7 +1343,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/typechain", null],\
             ["fs-extra", "npm:9.1.0"],\
             ["hardhat", "npm:2.8.4"],\
-            ["lodash", "npm:4.17.21"],\
+            ["lodash", null],\
             ["typechain", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:7.0.0"]\
           ],\
           "packagePeers": [\
@@ -13678,7 +13677,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hardhat-abi-exporter", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.8.0"],\
             ["hardhat-contract-sizer", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.5.0"],\
             ["hardhat-gas-reporter", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:1.0.8"],\
-            ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:9.2.1"],\
             ["prettier", "npm:2.5.1"],\
             ["prettier-plugin-solidity", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:1.0.0-dev.21"],\

@@ -39,7 +39,7 @@ Reference: https://hardhat.org/guides/typescript.html
 Typechain will help generating typescript bindings for the Solidity contracts at compile time. Then this bindings can be used to access the contracts using typescript.
 
 ```
-$ yarn add -D typechain @typechain/hardhat @typechain/ethers-v5 @ethersproject/bytes @ethersproject/abi @ethersproject/providers lodash
+$ yarn add -D typechain @typechain/hardhat @typechain/ethers-v5 @ethersproject/bytes @ethersproject/abi @ethersproject/providers
 ```
 
 Reference: https://www.npmjs.com/package/@typechain/hardhat
@@ -126,7 +126,7 @@ Config files: [.solhint.json](.solhint.json) and [.solhintignore](.solhintignore
 
 Reference: https://github.com/protofire/solhint
 
-# Open Zeppelin
+# OpenZeppelin
 
 This set of contracts provides the most common functionality for the development of smart contracts. They are battle tested and will increase the security of yout contracts.
 
@@ -188,4 +188,14 @@ Create better command line scripts by adding colors and making them more beautif
 
 ```
 $ yarn add -D console-log-colors
+```
+
+# git
+
+# husky
+
+Git hooks made easy. Helper to run pre-commit hooks before pushing to the remote repository
+
+```
+$ yarn add -D husky
 ```
