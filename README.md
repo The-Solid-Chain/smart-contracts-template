@@ -91,5 +91,5 @@ My name is Roberto Cano, I'm a Blockchain Engineer and Founder of **The Solid Ch
 
 
 MIT License (see [LICENSE.md](./LICENSE.md))
-Copyright (c) 2022 Roberto Cano & The Solid Chain
 
+Copyright (c) 2022 Roberto Cano & The Solid Chain
