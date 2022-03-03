@@ -1,14 +1,11 @@
-import { ethers } from "hardhat";
+import { Contract } from "ethers";
+import { deploy, DeploymentFlags } from "./utils/deployment";
 
 /**
  * Deploy SimpleContract
  */
 async function main() {
-    const SimpleContractFactory = await ethers.getContractFactory("SimpleContract");
-    const SimpleContract = await SimpleContractFactory.deploy();
-
-    await SimpleContract.deployed();
-
+    const SimpleContract: Contract = await deploy("SimpleContract", [], DeploymentFlags.All);
     console.log(`SimpleContract deployed at ${SimpleContract.address}`);
 }
 

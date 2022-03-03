@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ethersproject/bytes", "npm:5.5.0"],\
             ["@ethersproject/providers", "npm:5.5.3"],\
             ["@nomiclabs/hardhat-ethers", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.5"],\
+            ["@nomiclabs/hardhat-etherscan", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:3.0.3"],\
             ["@nomiclabs/hardhat-waffle", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.2"],\
             ["@openzeppelin/contracts", "npm:4.5.0"],\
             ["@typechain/ethers-v5", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:9.0.0"],\
@@ -68,6 +69,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hardhat-gas-reporter", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:1.0.8"],\
             ["husky", "npm:7.0.4"],\
             ["lint-staged", "npm:12.3.4"],\
+            ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:9.2.1"],\
             ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.5.1"],\
@@ -922,6 +924,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@nomiclabs/hardhat-etherscan", [\
+        ["npm:3.0.3", {\
+          "packageLocation": "./.yarn/cache/@nomiclabs-hardhat-etherscan-npm-3.0.3-64cece1d9f-6ce0856ad9.zip/node_modules/@nomiclabs/hardhat-etherscan/",\
+          "packageDependencies": [\
+            ["@nomiclabs/hardhat-etherscan", "npm:3.0.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:3.0.3", {\
+          "packageLocation": "./.yarn/__virtual__/@nomiclabs-hardhat-etherscan-virtual-79ee75c679/0/cache/@nomiclabs-hardhat-etherscan-npm-3.0.3-64cece1d9f-6ce0856ad9.zip/node_modules/@nomiclabs/hardhat-etherscan/",\
+          "packageDependencies": [\
+            ["@nomiclabs/hardhat-etherscan", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:3.0.3"],\
+            ["@ethersproject/abi", "npm:5.5.0"],\
+            ["@ethersproject/address", "npm:5.5.0"],\
+            ["@types/hardhat", null],\
+            ["cbor", "npm:5.2.0"],\
+            ["debug", "virtual:78d1eebbc25bc1579eb4cfa52400cd92e2a9a853b1fec728b85c3bd8eec29207e833c070e25371c93e505315c15a77237bcaf08a49eded2e917aa785705ca091#npm:4.3.3"],\
+            ["fs-extra", "npm:7.0.1"],\
+            ["hardhat", "npm:2.8.4"],\
+            ["semver", "npm:6.3.0"],\
+            ["undici", "npm:4.14.1"]\
+          ],\
+          "packagePeers": [\
+            "@types/hardhat",\
+            "hardhat"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@nomiclabs/hardhat-waffle", [\
         ["npm:2.0.2", {\
           "packageLocation": "./.yarn/cache/@nomiclabs-hardhat-waffle-npm-2.0.2-00f0f79097-7a14520b4e.zip/node_modules/@nomiclabs/hardhat-waffle/",\
@@ -1346,7 +1377,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/typechain", null],\
             ["fs-extra", "npm:9.1.0"],\
             ["hardhat", "npm:2.8.4"],\
-            ["lodash", null],\
+            ["lodash", "npm:4.17.21"],\
             ["typechain", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:7.0.0"]\
           ],\
           "packagePeers": [\
@@ -4179,6 +4210,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/catering-npm-2.1.1-b116dcdfef-205daefa69.zip/node_modules/catering/",\
           "packageDependencies": [\
             ["catering", "npm:2.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["cbor", [\
+        ["npm:5.2.0", {\
+          "packageLocation": "./.yarn/cache/cbor-npm-5.2.0-4f6440587f-b3c39dae64.zip/node_modules/cbor/",\
+          "packageDependencies": [\
+            ["cbor", "npm:5.2.0"],\
+            ["bignumber.js", "npm:9.0.2"],\
+            ["nofilter", "npm:1.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11305,6 +11347,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["nofilter", [\
+        ["npm:1.0.4", {\
+          "packageLocation": "./.yarn/cache/nofilter-npm-1.0.4-1cbdc6c03a-54d864f745.zip/node_modules/nofilter/",\
+          "packageDependencies": [\
+            ["nofilter", "npm:1.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["nopt", [\
         ["npm:3.0.6", {\
           "packageLocation": "./.yarn/cache/nopt-npm-3.0.6-370ee63cf6-7f8579029a.zip/node_modules/nopt/",\
@@ -13975,6 +14026,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ethersproject/bytes", "npm:5.5.0"],\
             ["@ethersproject/providers", "npm:5.5.3"],\
             ["@nomiclabs/hardhat-ethers", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.5"],\
+            ["@nomiclabs/hardhat-etherscan", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:3.0.3"],\
             ["@nomiclabs/hardhat-waffle", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:2.0.2"],\
             ["@openzeppelin/contracts", "npm:4.5.0"],\
             ["@typechain/ethers-v5", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:9.0.0"],\
@@ -14006,6 +14058,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hardhat-gas-reporter", "virtual:92605acceea163a65b79c3bd4e4e7b6b6d804eddbaf1b91a3a4c84457d16c4a7924b84167c8b051356f281bffc3330b16ca213cde39542b338a7085d8953cf53#npm:1.0.8"],\
             ["husky", "npm:7.0.4"],\
             ["lint-staged", "npm:12.3.4"],\
+            ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:9.2.1"],\
             ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.5.1"],\
@@ -15402,6 +15455,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/underscore-npm-1.9.1-534bb4425c-bee6f58766.zip/node_modules/underscore/",\
           "packageDependencies": [\
             ["underscore", "npm:1.9.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["undici", [\
+        ["npm:4.14.1", {\
+          "packageLocation": "./.yarn/cache/undici-npm-4.14.1-d95e964ffd-d64a7fa0e3.zip/node_modules/undici/",\
+          "packageDependencies": [\
+            ["undici", "npm:4.14.1"]\
           ],\
           "linkType": "HARD"\
         }]\

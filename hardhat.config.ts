@@ -1,5 +1,6 @@
 import "@nomiclabs/hardhat-waffle";
 import "@nomiclabs/hardhat-ethers";
+import "@nomiclabs/hardhat-etherscan";
 import "@typechain/hardhat";
 import "hardhat-abi-exporter";
 import "hardhat-gas-reporter";
@@ -14,7 +15,7 @@ import { resolve } from "path";
 import { config as dotenvConfig } from "dotenv";
 import { HardhatUserConfig } from "hardhat/config";
 
-import { getChainConfig, getHardhatChainConfig, getLocalhostChainConfig } from "./hardhat.helpers";
+import { getChainConfig, getHardhatChainConfig, getLocalhostChainConfig, getEtherscanApiKey } from "./hardhat.helpers";
 
 dotenvConfig({ path: resolve(__dirname, "./.env") });
 
@@ -77,6 +78,11 @@ const config: HardhatUserConfig = {
         only: [],
         spacing: 2,
         pretty: false,
+    },
+    etherscan: {
+        // Your API key for Etherscan
+        // Obtain one at https://etherscan.io/
+        apiKey: getEtherscanApiKey(),
     },
 };
 

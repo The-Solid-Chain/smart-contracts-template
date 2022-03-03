@@ -194,3 +194,15 @@ export function getChainConfig(network: NetworksType): NetworkUserConfig {
         url,
     };
 }
+
+export function getEtherscanApiKey(): string {
+    if (!process.env.ETHERSCAN_API_KEY) {
+        return "";
+    }
+
+    try {
+        return JSON.parse(process.env.ETHERSCAN_API_KEY);
+    } catch (e) {
+        return process.env.ETHERSCAN_API_KEY;
+    }
+}
