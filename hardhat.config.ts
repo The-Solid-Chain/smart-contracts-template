@@ -33,7 +33,14 @@ const config: HardhatUserConfig = {
         kovan: getChainConfig("kovan"),
         rinkeby: getChainConfig("rinkeby"),
         ropsten: getChainConfig("ropsten"),
+        "arb-mainnet": getChainConfig("arb-mainnet"),
         "arb-rinkeby": getChainConfig("arb-rinkeby"),
+        "ply-mainnet": getChainConfig("ply-mainnet"),
+        "ply-mumbai": getChainConfig("ply-mumbai"),
+        "opt-mainnet": getChainConfig("opt-mainnet"),
+        "opt-kovan": getChainConfig("opt-kovan"),
+        "palm-mainnet": getChainConfig("palm-mainnet"),
+        "palm-rinkeby": getChainConfig("palm-rinkeby"),
     },
     paths: {
         artifacts: "./artifacts",
@@ -45,8 +52,6 @@ const config: HardhatUserConfig = {
         version: "0.8.9",
         settings: {
             metadata: {
-                // Not including the metadata hash
-                // https://github.com/paulrberg/solidity-template/issues/31
                 bytecodeHash: "none",
             },
             // Disable the optimizer when debugging

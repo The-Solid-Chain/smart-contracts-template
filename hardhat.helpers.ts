@@ -54,6 +54,13 @@ export const ChainIds = {
     rinkeby: 4,
     ropsten: 3,
     "arb-rinkeby": 421611,
+    "arb-mainnet": 42161,
+    "ply-mainnet": 137,
+    "ply-mumbai": 80001,
+    "opt-mainnet": 10,
+    "opt-kovan": 69,
+    "palm-mainnet": 11297108109,
+    "palm-rinkeby": 11297108099,
 };
 
 export const GasPrice: AutoOptions = {
@@ -120,6 +127,8 @@ export const EndpointURLs: EndpointsConfig = {
         "ply-mumbai": "https://polygon-mumbai.alchemyapi.io/v2/",
         "opt-mainnet": "https://optimism-mainnet.alchemyapi.io/v2/",
         "opt-kovan": "https://optimism-kovan.alchemyapi.io/v2/",
+        "palm-mainnet": "",
+        "palm-rinkeby": "",
     },
 };
 
@@ -127,15 +136,16 @@ export const Networks = Object.keys(ChainIds);
 export type NetworksType = keyof typeof ChainIds;
 
 // Ensure that we have all the environment variables we need.
-export const walletSeed: string | undefined = process.env.WALLET_SEED;
-if (!walletSeed) {
+
+if (!process.env.WALLET_SEED) {
     throw new Error("Please set your WALLET_SEED in a .env file");
 }
+export const walletSeed: string = process.env.WALLET_SEED;
 
-const endpointApiKey: string | undefined = process.env.ENDPOINT_API_KEY;
-if (!endpointApiKey) {
+if (!process.env.ENDPOINT_API_KEY) {
     throw new Error("Please set your ENDPOINT_API_KEY in a .env file");
 }
+const endpointApiKey: string = process.env.ENDPOINT_API_KEY;
 
 const endpointProvider: string = process.env.ENDPOINT_PROVIDER != null ? process.env.ENDPOINT_PROVIDER : "";
 if (endpointProvider !== "infura" && endpointProvider !== "alchemy") {
