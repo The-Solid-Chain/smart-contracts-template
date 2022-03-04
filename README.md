@@ -33,6 +33,7 @@ You can also fill in the following values, but they are optional:
 
 -   **MAX_GAS** - The maximum gas that will be used to deploy the contracts or perform a transaction.
 -   **GAS_PRICE** - The gas price that will be used when doing a transaction on the blockchain
+-   **ETHERSCAN_API_KEY** - The API key for Etherscan for contract verification. It can also be a JSON object with keys for each block scanner. Check [Hardhat Block Explorers](https://hardhat.org/plugins/nomiclabs-hardhat-etherscan.html#multiple-api-keys-and-alternative-block-explorers) for more information
 
 ## Commands
 
