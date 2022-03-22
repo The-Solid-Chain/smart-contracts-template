@@ -21,6 +21,10 @@ Then you can install all dependencies using the following command:
 $ yarn install
 ```
 
+### VS Code
+
+If you are using VS Code, please read the file [VSCODE.md](./VSCODE.md) to install the local VS Code SDK plus all the necessary plugins for this repo.
+
 ### Setup your .env file
 
 Copy the [.env.template](.env.template) file into a **.env** file and fill in the values. You will need to fill at least the following values:
