@@ -66,6 +66,26 @@ $ yarn add -D hardhat-contract-sizer
 
 Reference: https://www.npmjs.com/package/hardhat-contract-sizer
 
+## ABI Exporter
+
+This plugin exports the ABI of the contracts into a specific directory, and it also allows to output a compact ABI format that is useful in some scenarios:
+
+```
+$ yarn add -D hardhat-abi-exporter
+```
+
+Reference: https://www.npmjs.com/package/hardhat-abi-exporter
+
+## Etherscan
+
+This plugin helps verifying the contracts on Etherscan.
+
+```
+$ yarn add -D @nomiclabs/hardhat-etherscan
+```
+
+Reference: https://www.npmjs.com/package/@nomiclabs/hardhat-etherscan
+
 ## Waffle Testing Framework
 
 Waffle is a testing framework that uses _Chai_ and _Mocha_ and allows to write tests that can be run directly from _Hardhat_
@@ -87,6 +107,14 @@ $ yarn add -D solidity-coverage shelljs
 Config file: [.solcover.js](.solcover.js)
 
 Reference: https://www.npmjs.com/package/solidity-coverage
+
+# Ganache
+
+This is a local blockchain that can be used to test smart contracts. It has the ability to quickly fork a real blockchain and it is a great addition to the local Hardhat node.
+
+```
+$ yarn add -D ganache
+```
 
 # Prettier
 
@@ -189,8 +217,6 @@ Create better command line scripts by adding colors and making them more beautif
 ```
 $ yarn add -D console-log-colors
 ```
-
-# git
 
 # husky
 
