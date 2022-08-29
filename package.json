@@ -39,7 +39,7 @@
         "@nomiclabs/hardhat-ethers": "^2.0.5",
         "@nomiclabs/hardhat-etherscan": "^3.0.3",
         "@nomiclabs/hardhat-waffle": "^2.0.2",
-        "@openzeppelin/contracts": "^4.5.0",
+        "@openzeppelin/contracts": "^4.7.3",
         "@typechain/ethers-v5": "^9.0.0",
         "@typechain/hardhat": "^4.0.0",
         "@types/chai": "^4.3.0",
@@ -87,7 +87,7 @@
         "*.{js,json,md,sol,ts}": "yarn prettier"
     },
     "dependenciesMeta": {
-        "@openzeppelin/contracts@4.5.0": {
+        "@openzeppelin/contracts@4.7.3": {
             "unplugged": true
         }
     }
