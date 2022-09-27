@@ -1,11 +1,11 @@
 import { Contract } from "ethers";
-import { deploy, DeploymentFlags } from "./utils/deployment";
+import { deploy } from "./utils/deployment";
 
 /**
  * Deploy SimpleContract
  */
 async function main() {
-    const SimpleContract: Contract = await deploy("SimpleContract", [], DeploymentFlags.All);
+    const SimpleContract: Contract = await deploy("SimpleContract", []);
     console.log(`SimpleContract deployed at ${SimpleContract.address}`);
 }
 
