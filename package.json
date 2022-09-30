@@ -20,6 +20,7 @@
         "contracts:test": "yarn hardhat test",
         "contracts:coverage": "cross-env TS_NODE_TRANSPILE_ONLY=true CODE_COVERAGE=true hardhat coverage --solcoverjs ./.solcover.js --temp artifacts",
         "contracts:size": "cross-env TS_NODE_TRANSPILE_ONLY=true hardhat compile; cross-env TS_NODE_TRANSPILE_ONLY=true hardhat size-contracts",
+        "contracts:gas": "cross-env REPORT_GAS=true hardhat test",
         "deploy:local": "yarn hardhat --network localhost run ./scripts/deploy.ts",
         "deploy:rinkeby": "yarn hardhat --network rinkeby run ./scripts/deploy.ts",
         "deploy:mainnet": "yarn hardhat --network mainnet run ./scripts/deploy.ts",
